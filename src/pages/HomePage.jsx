@@ -1,15 +1,15 @@
 import { Input, Card, Container, Row, Col, Button } from "reactstrap";
 import { useState } from "react";
-import CatComponent from "./CatComponent";
+import CatComponent from "../components/CatComponent";
 
 function HomePage() {
 	const [searchText, setSearchText] = useState("");
 	const [catFriends, setCatFriends] = useState([
-		{ name: "Cat 1", email: "cat1@email.com" },
-		{ name: "Cat 2", email: "cat2@email.com" },
-		{ name: "Cat 3 Test", email: "cat3@email.com" },
-		{ name: "Cat 4 Test", email: "cat4@email.com" },
-		{ name: "Cat 5", email: "cat5@email.com" },
+		{ id: 1, name: "Cat 1", email: "cat1@email.com" },
+		{ id: 2, name: "Cat 2", email: "cat2@email.com" },
+		{ id: 3, name: "Cat 3 Test", email: "cat3@email.com" },
+		{ id: 4, name: "Cat 4 Test", email: "cat4@email.com" },
+		{ id: 5, name: "Cat 5", email: "cat5@email.com" },
 	]);
 
 	return (

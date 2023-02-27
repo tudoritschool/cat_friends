@@ -1,4 +1,6 @@
 import { Card, CardBody, CardTitle, CardText, Button } from "reactstrap";
+import { Link } from "react-router-dom";
+
 function CatComponent({ cat }) {
 	return (
 		<>
@@ -14,7 +16,9 @@ function CatComponent({ cat }) {
 				<CardBody>
 					<CardTitle tag='h5'>{cat.name}</CardTitle>
 					<CardText>{cat.email}</CardText>
-					<Button>See Cat details</Button>
+					<Link to={`/cat/${cat.id}`}>
+						<Button>See Cat details</Button>
+					</Link>
 				</CardBody>
 			</Card>
 		</>
